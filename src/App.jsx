@@ -1,0 +1,76 @@
+import React, { useState, useEffect } from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import WhyTrustUs from './components/WhyTrustUs'
+import Stats from './components/Stats'
+import Team from './components/Team'
+import Process from './components/Process'
+import Services from './components/Services'
+import TechStack from './components/TechStack'
+import Projects from './components/Projects'
+import Blog from './components/Blog'
+import FAQ from './components/FAQ'
+import BannerCTA from './components/BannerCTA'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+import Loader from './components/Loader'
+import Privacy from './components/Privacy'
+import Terms from './components/Terms'
+import useReveal from './hooks/useReveal'
+
+export default function App() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light'
+  })
+  const [currentPage, setCurrentPage] = useState('home')
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  useReveal(currentPage)
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+  }
+
+  const navigateTo = (page) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  if (currentPage === 'privacy') {
+    return <Privacy onBack={() => navigateTo('home')} />
+  }
+
+  if (currentPage === 'terms') {
+    return <Terms onBack={() => navigateTo('home')} />
+  }
+
+  return (
+    <>
+      <Loader />
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      
+      <main>
+        <Hero />
+        <WhyTrustUs />
+        <Stats />
+        <Team />
+        <Process />
+        <Services />
+        <TechStack />
+        <Projects />
+        <Blog />
+        <FAQ />
+        <BannerCTA />
+        <Contact onNavigate={navigateTo} />
+      </main>
+
+      <Footer onNavigate={navigateTo} />
+      <ScrollToTop currentPage={currentPage} />
+    </>
+  )
+}

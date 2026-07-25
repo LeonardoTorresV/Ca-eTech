@@ -1,0 +1,74 @@
+.tech-stack {
+  position: relative;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.25rem;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.tech-logo-wrapper {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
+}
+
+.tech-card:hover .tech-logo-wrapper {
+  transform: scale(1.15) translateY(-5px);
+}
+
+.tech-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.tech-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* Brand specific shadows & glows on hover */
+.tech-card.react:hover .tech-logo-wrapper {
+  filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.5));
+}
+.tech-card.angular:hover .tech-logo-wrapper {
+  filter: drop-shadow(0 0 15px rgba(221, 0, 49, 0.4));
+}
+.tech-card.springboot:hover .tech-logo-wrapper {
+  filter: drop-shadow(0 0 15px rgba(109, 179, 63, 0.45));
+}
+.tech-card.nodejs:hover .tech-logo-wrapper {
+  filter: drop-shadow(0 0 15px rgba(131, 205, 41, 0.45));
+}
+
+.tech-logo-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  
+  .tech-card {
+    padding: 1.75rem 1rem;
+  }
+}
