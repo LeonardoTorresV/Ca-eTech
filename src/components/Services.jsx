@@ -4,8 +4,7 @@ import './Services.css'
 const SERVICES = [
   {
     title: 'Landing Page & Sitios Web',
-    description: 'Sitios web de alto rendimiento, optimizados para conversión y SEO. Perfectos para lanzar tu startup, producto o campaña.',
-    price: 'Desde USD 500',
+    description: 'Sitios web de alto rendimiento, optimizados para conversión y SEO. Ideales para emprendedores y PyMEs que necesitan presencia digital profesional. Diseño mobile-first, carga ultrarrápida y experiencia de usuario cuidada en cada detalle.',
     tags: ['Next.js', 'React', 'Tailwind', 'SEO Técnico'],
     popular: true,
     includes: [
@@ -19,8 +18,7 @@ const SERVICES = [
   },
   {
     title: 'Aplicativo Web Monolito / Microservicios',
-    description: 'Plataformas web empresariales escalables. Arquitectura monolítica o de microservicios según la complejidad de tu negocio.',
-    price: 'Desde USD 3,000',
+    description: 'Plataformas web empresariales escalables. Diseñamos arquitectura monolítica o de microservicios según la complejidad de tu negocio, con foco en mantenibilidad, testing y documentación.',
     tags: ['Angular', 'Spring Boot', 'Node.js', 'PostgreSQL'],
     popular: false,
     includes: [
@@ -35,33 +33,15 @@ const SERVICES = [
   },
   {
     title: 'Aplicativo de Escritorio',
-    description: 'Software de escritorio multiplataforma para entornos empresariales. Interfaz nativa, rendimiento y seguridad.',
-    price: 'Desde USD 2,500',
-    tags: ['Electron', 'JavaFX', 'Python', 'SQLite'],
+    description: 'Software de escritorio multiplataforma para entornos empresariales. Interfaz nativa o híbrida, acceso a datos local o remoto, y experiencia de usuario consistente en Windows.',
+    tags: ['JavaFX', 'Python', 'SQLite'],
     popular: false,
     includes: [
-      'Instalador para Windows, macOS o Linux',
-      'Interfaz nativa o web-based (Electron)',
+      'Instalador para Windows',
       'Base de datos local o remota',
       'Sistema de logs y reportes',
       'Manual de usuario y capacitación',
       'Soporte post-entrega 30 días'
-    ]
-  },
-  {
-    title: 'Próximamente',
-    description: 'Nuevos servicios en desarrollo. Estamos trabajando en nuevas soluciones digitales para ampliar nuestra oferta.',
-    price: 'Próximamente',
-    tags: ['Innovación', 'Nuevo'],
-    popular: false,
-    comingSoon: true,
-    includes: [
-      'Nuevas soluciones digitales',
-      'Tecnologías innovadoras',
-      'Consultoría especializada',
-      'Soporte dedicado',
-      'Documentación completa',
-      'Garantía extendida'
     ]
   }
 ]
@@ -88,13 +68,12 @@ export default function Services() {
         <div className="services-grid">
           {SERVICES.map((service, index) => (
             <div key={index} className={`glass-card service-card ${service.popular ? 'service-popular' : ''}`}>
-              {service.popular && <span className="service-badge">Más solicitado</span>}
               {service.comingSoon && <span className="service-badge service-badge-soon">Próximamente</span>}
               
               <h3 className="service-title">{service.title}</h3>
               <p className="service-desc">{service.description}</p>
               
-              <div className="service-price">{service.price}</div>
+               {/* <div className="service-price">{service.price}</div> */}
               
               <div className="service-tags">
                 {service.tags.map((tag, i) => (

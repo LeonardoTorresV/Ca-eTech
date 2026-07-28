@@ -144,7 +144,7 @@ export default function Contact({ onNavigate }) {
 
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem' }}>
                    <p>📍 <strong>Ubicación:</strong> Remoto Global</p>
-                   <p>⏰ <strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 (UTC-3)</p>
+                   <p>⏰ <strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 (UTC-5)</p>
             </div>
           </div>
 
@@ -158,7 +158,7 @@ export default function Contact({ onNavigate }) {
                   id="nombreCompleto" 
                   name="nombreCompleto" 
                   className={`form-input ${errors.nombreCompleto ? 'input-error' : ''}`}
-                  placeholder="Ej. Juan Pérez" 
+                  placeholder="" 
                   value={formData.nombreCompleto}
                   onChange={handleChange}
                   autoComplete="name"
@@ -173,7 +173,7 @@ export default function Contact({ onNavigate }) {
                   id="correoElectronico" 
                   name="correoElectronico" 
                   className={`form-input ${errors.correoElectronico ? 'input-error' : ''}`}
-                  placeholder="ejemplo@correo.com" 
+                  placeholder="" 
                   value={formData.correoElectronico}
                   onChange={handleChange}
                   autoComplete="email"
