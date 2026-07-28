@@ -18,14 +18,6 @@ const FAQS = [
     question: '¿Qué incluye el soporte post-entrega?',
     answer: 'Incluye corrección de bugs, actualizaciones menores y consultoría técnica. Ofrecemos planes de mantenimiento mensual adaptados a tus necesidades.'
   },
-  {
-    question: '¿Aceptan pagos en cuotas?',
-    answer: 'Sí. Dividimos el pago en hitos: 30% al inicio, 40% al finalizar el desarrollo y 30% después de 30 días de soporte.'
-  },
-  {
-    question: '¿Qué pasa si no quedo satisfecho con el resultado?',
-    answer: 'Trabajamos por hitos y validaciones conjuntas. Si algo no se alinea con lo acordado, lo corregimos sin costo adicional dentro del alcance definido.'
-  }
 ]
 
 export default function FAQ() {

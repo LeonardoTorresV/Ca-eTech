@@ -2,6 +2,37 @@
   position: relative;
 }
 
+.tech-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.tech-filter-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.15));
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tech-filter-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-main);
+}
+
+.tech-filter-btn.active {
+  background: var(--color-primary, #3b82f6);
+  border-color: var(--color-primary, #3b82f6);
+  color: #fff;
+}
+
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
