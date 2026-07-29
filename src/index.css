@@ -208,6 +208,7 @@ section {
   box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
 }
 
+
 /* Animations */
 @keyframes float {
   0% { transform: translateY(0px) rotate(0deg); }
