@@ -9,7 +9,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 0.75fr 0.75fr;
+  grid-template-columns: 1.5fr 1fr 0.75fr 0.75fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
 }
@@ -129,6 +129,20 @@
 .footer-copy {
   font-size: 0.85rem;
   color: var(--color-text-muted);
+}
+
+
+.footer-client-logos {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-client-logo {
+  max-width: 20px;
+  height: auto;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 @media (max-width: 768px) {

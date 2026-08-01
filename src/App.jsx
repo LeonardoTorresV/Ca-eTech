@@ -18,6 +18,7 @@ import Loader from './components/Loader'
 import Privacy from './components/Privacy'
 import Terms from './components/Terms'
 import useReveal from './hooks/useReveal'
+import TrustUs from './components/TrustUs'
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -59,6 +60,7 @@ export default function App() {
         <WhyTrustUs />
         <Stats />
         <Team />
+        <TrustUs />
         <Process />
         <Services />
         <TechStack />
