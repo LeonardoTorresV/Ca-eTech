@@ -6,7 +6,6 @@ export default function Contact({ onNavigate }) {
     nombreCompleto: '',
     correoElectronico: '',
     tipoProyecto: '',
-    presupuestoEstimado: '',
     timelineDeseado: '',
     mensaje: '',
     aceptaTerminos: false
@@ -33,7 +32,6 @@ export default function Contact({ onNavigate }) {
     if (!formData.correoElectronico.trim()) newErrors.correoElectronico = 'El email es requerido'
     else if (!/\S+@\S+\.\S+/.test(formData.correoElectronico)) newErrors.correoElectronico = 'Email inválido'
      if (!formData.tipoProyecto) newErrors.tipoProyecto = 'Selecciona un tipo de proyecto'
-     if (!formData.presupuestoEstimado) newErrors.presupuestoEstimado = 'Selecciona un presupuesto'
      if (!formData.timelineDeseado) newErrors.timelineDeseado = 'Selecciona un plazo'
      if (!formData.mensaje.trim()) newErrors.mensaje = 'Cuéntanos sobre tu proyecto'
     if (!formData.aceptaTerminos) newErrors.aceptaTerminos = 'Debes aceptar los términos y condiciones'
@@ -68,7 +66,6 @@ export default function Contact({ onNavigate }) {
           nombreCompleto: '',
           correoElectronico: '',
           tipoProyecto: '',
-          presupuestoEstimado: '',
           timelineDeseado: '',
           mensaje: '',
           aceptaTerminos: false
@@ -202,23 +199,6 @@ export default function Contact({ onNavigate }) {
               </div>
 
               <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="presupuestoEstimado" className="form-label">Presupuesto (USD)</label>
-                  <select 
-                    id="presupuestoEstimado" 
-                    name="presupuestoEstimado" 
-                    className={`form-input form-select ${errors.presupuestoEstimado ? 'input-error' : ''}`}
-                    value={formData.presupuestoEstimado}
-                    onChange={handleChange}
-                   >
-                     <option value="">Selecciona</option>
-                     <option value="MENOS_1000">&lt; $1,000</option>
-                    <option value="ENTRE_1000_5000">$1,000 - $5,000</option>
-                    <option value="ENTRE_5000_10000">$5,000 - $10,000</option>
-                    <option value="MAS_10000">&gt; $10,000</option>
-                  </select>
-                  {errors.presupuestoEstimado && <span className="error-text">{errors.presupuestoEstimado}</span>}
-                </div>
 
                 <div className="form-group">
                   <label htmlFor="timelineDeseado" className="form-label">Timeline Deseado</label>
