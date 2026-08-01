@@ -54,7 +54,7 @@ export default function Contact({ onNavigate }) {
     setStatus(null)
 
     try {
-      const response = await fetch('http://localhost:8080/contacto', {
+      const response = await fetch('https://ca-etech-backend.onrender.com/contacto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
