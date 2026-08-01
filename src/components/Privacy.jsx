@@ -17,7 +17,7 @@ export default function Privacy({ onBack }) {
           <p className="legal-updated">Última actualización: 2026</p>
 
           <h2>1. Información que recopilamos</h2>
-          <p>Recopilamos los datos que usted nos proporciona voluntariamente a través del formulario de contacto: nombre, correo electrónico, tipo de proyecto, presupuesto estimado y mensaje.</p>
+          <p>Recopilamos los datos que usted nos proporciona voluntariamente a través del formulario de contacto: nombre, correo electrónico, tipo de proyecto y mensaje.</p>
 
           <h2>2. Uso de la información</h2>
           <p>Utilizamos esta información exclusivamente para responder a su consulta, enviar propuestas comerciales y brindar soporte post-venta. No compartimos sus datos con terceros sin su consentimiento.</p>
