@@ -45,7 +45,7 @@ const ARTICLES = [
   {
     id: 6,
     title: 'La guía definitiva para elegir tu stack tecnológico sin arrepentirte',
-    excerpt: 'No hay una respuesta mágica, pero sí un método. Te explicamos cómo evaluar tecnologías según tu presupuesto, equipo y objetivos de negocio.',
+    excerpt: 'No hay una respuesta mágica, pero sí un método. Te explicamos cómo evaluar tecnologías según tu objetivos de negocio.',
     category: 'Tecnología',
     author: 'DevNexus',
     tags: ['Stack', 'Decisiones']
