@@ -96,20 +96,7 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="services-not">
-          <h3 className="not-title">Qué NO hacemos</h3>
-          <div className="not-grid">
-            {NOT_SERVICES.map((item, index) => (
-              <div key={index} className="not-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   )
