@@ -29,7 +29,7 @@ export default function Header({ theme, toggleTheme }) {
             <circle cx="15" cy="32.5" r="4" fill="var(--color-logo-navy)" />
           </svg>
           {/* <span>DevNexus</span> */}
-          <span>CañeTech</span>
+          <span>YakuCode</span>
         </div>
 
         {/* NAVIGATION LINKS */}

@@ -7,7 +7,7 @@
     width: 100%;
     overflow: hidden;
     padding: 0.75em 0;
-    background-color: var(--color-bg-solid);
+    /* background-color: var(--color-bg-solid); */
 }
 
 .client-logos-track {
@@ -43,7 +43,7 @@
 [data-theme='dark'] .client-item {
     
     border-color: var(--color-primary-dark);
-    box-shadow: 0 8px 24px var(--color-primary-dark);
+    box-shadow: 0 2px 15px var(--color-primary-dark);
 }
 
 .imglogosempresas{
