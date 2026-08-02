@@ -20,7 +20,7 @@ export default function Terms({ onBack }) {
           <p>Al utilizar nuestros servicios, usted acepta estos términos y condiciones en su totalidad. Si no está de acuerdo, por favor no utilice nuestros servicios.</p>
 
           <h2>2. Propiedad intelectual</h2>
-          <p>Todo el código, diseños y materiales entregados al cliente pasan a ser propiedad del cliente una vez realizado el pago completo. DevNexus se reserva el derecho de mostrar el trabajo en su portafolio.</p>
+          <p>Todo el código, diseños y materiales entregados al cliente pasan a ser propiedad del cliente una vez realizado el pago completo. YakuCode se reserva el derecho de mostrar el trabajo en su portafolio.</p>
 
           <h2>3. Confidencialidad</h2>
           <p>Nos comprometemos a firmar un Acuerdo de Confidencialidad (NDA) antes de comenzar cualquier proyecto. Toda la información compartida por el cliente será tratada como confidencial.</p>
@@ -38,7 +38,7 @@ export default function Terms({ onBack }) {
            <p>Estos términos se rigen por las leyes aplicables en la jurisdicción correspondiente. Cualquier disputa se resolverá según la normativa vigente.</p>
 
           <h2>8. Contacto</h2>
-          <p>Para consultas sobre estos términos, contáctenos en <a href="mailto:info@devnexus.com">info@devnexus.com</a>.</p>
+          <p>Para consultas sobre estos términos, contáctenos en <a href="mailto:info@yakucode.com">info@yakucode.com</a>.</p>
         </div>
       </div>
     </div>
