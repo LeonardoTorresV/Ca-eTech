@@ -57,7 +57,7 @@ export default function Hero() {
               <circle cx="80" cy="45" r="5" fill="#f59e0b" />
               <circle cx="95" cy="45" r="5" fill="#10b981" />
               {/* Window Title */}
-              <text x="250" y="50" fill="#64748b" fontSize="11" fontFamily="var(--font-body)" textAnchor="middle">workspace - devnexus.js</text>
+              <text x="250" y="50" fill="#64748b" fontSize="11" fontFamily="var(--font-body)" textAnchor="middle">workspace - yakucode.js</text>
 
               {/* Sidebar */}
               <rect x="45" y="60" width="70" height="220" fill="#0f1922" />

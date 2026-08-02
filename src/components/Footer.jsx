@@ -22,7 +22,7 @@ export default function Footer({ onNavigate }) {
                 <circle cx="15" cy="67.5" r="4" fill="var(--color-logo-navy)" />
                 <circle cx="15" cy="32.5" r="4" fill="var(--color-logo-navy)" />
               </svg>
-              <span>DevNexus</span>
+              <span>YakuCode</span>
             </div>
             <p className="footer-brand-desc">
               Grupo especializado en desarrollo de software y soluciones digitales a medida. Diseñamos e implementamos aplicaciones rápidas, seguras y modulares con los más altos estándares de clean code.
@@ -95,7 +95,7 @@ export default function Footer({ onNavigate }) {
         </div>
         <div className="footer-bottom">
           <p className="footer-copy">
-            &copy; {currentYear} DevNexus. Todos los derechos reservados. Diseñado e implementado con código limpio.
+            &copy; {currentYear} YakuCode. Todos los derechos reservados. Diseñado e implementado con código limpio.
           </p>
         </div>
       </div>
