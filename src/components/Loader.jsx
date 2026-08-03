@@ -1,17 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Loader.css'
 
-export default function Loader() {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 1200)
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (!loading) return null
+export default function Loader({ isLoading }) {
+  if (!isLoading) return null
 
   return (
     <div className="loader-overlay">

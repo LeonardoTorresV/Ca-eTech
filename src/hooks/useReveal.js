@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
 
-export default function useReveal(currentPage) {
+export default function useReveal(currentPage, isLoading) {
   useEffect(() => {
+    if (isLoading) return
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -16,5 +18,5 @@ export default function useReveal(currentPage) {
     document.querySelectorAll('section.reveal, .reveal').forEach((el) => observer.observe(el))
 
     return () => observer.disconnect()
-  }, [currentPage])
+  }, [currentPage, isLoading])
 }

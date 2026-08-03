@@ -25,13 +25,21 @@ export default function App() {
     return localStorage.getItem('theme') || 'light'
   })
   const [currentPage, setCurrentPage] = useState('home')
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
     localStorage.setItem('theme', theme)
   }, [theme])
 
-  useReveal(currentPage)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1200)
+    return () => clearTimeout(timer)
+  }, [])
+
+  useReveal(currentPage, isLoading)
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
@@ -52,27 +60,30 @@ export default function App() {
 
   return (
     <>
-      <Loader />
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      
-      <main>
-        <Hero />
-        <WhyTrustUs />
-        <Stats />
-        {/* <Team /> */}
-        <TrustUs />
-        <Process />
-        <Services />
-        <TechStack />
-        <Projects />
-        <Blog />
-        <FAQ />
-        <BannerCTA />
-        <Contact onNavigate={navigateTo} />
-      </main>
+      <Loader isLoading={isLoading} />
+      {isLoading ? null : (
+        <>
+          <Header theme={theme} toggleTheme={toggleTheme} />
 
-      <Footer onNavigate={navigateTo} />
-      <ScrollToTop currentPage={currentPage} />
+          <main>
+            <Hero />
+            <WhyTrustUs />
+            <Stats />
+            <TrustUs />
+            <Process />
+            <Services />
+            <TechStack />
+            <Projects />
+            <Blog />
+            <FAQ />
+            <BannerCTA />
+            <Contact onNavigate={navigateTo} />
+          </main>
+
+          <Footer onNavigate={navigateTo} />
+          <ScrollToTop currentPage={currentPage} />
+        </>
+      )}
     </>
   )
 }
