@@ -11,7 +11,7 @@ export default function Footer({ onNavigate }) {
           {/* Logo & Description */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/yakucode-logo-no-wallpaper.png" className="footer-logo-icon" alt="YakuCode Logo" />
+              <img src="/img/logo.ico" className="footer-logo-icon" alt="YakuCode Logo" />
               <span>YakuCode</span>
             </div>
             <p className="footer-brand-desc">

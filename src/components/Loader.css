@@ -20,7 +20,6 @@
   width: 6rem;
   height: 6rem;
   background: url('/yakucode-logo-no-wallpaper.png') center/contain no-repeat;
-  background-color: #ffffff;
   background-blend-mode: multiply;
   animation: loaderPulse 1.2s ease-in-out infinite;
 }
