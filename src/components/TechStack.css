@@ -88,9 +88,11 @@
   filter: drop-shadow(0 0 15px rgba(131, 205, 41, 0.45));
 }
 
-.tech-logo-wrapper svg {
+.tech-logo-wrapper svg,
+.tech-logo-wrapper img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {

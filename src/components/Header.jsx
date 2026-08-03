@@ -13,21 +13,7 @@ export default function Header({ theme, toggleTheme }) {
       <div className="container nav-container">
         {/* LOGO SECTION */}
         <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <svg className="logo-icon" viewBox="0 0 100 100" fill="none">
-            {/* Hexágono principal */}
-            <path d="M50 15 L85 32.5 V67.5 L50 85 L15 67.5 V32.5 Z" stroke="var(--color-logo-navy)" strokeWidth="5" strokeLinejoin="round" />
-            {/* Conexiones internas */}
-            <path d="M50 15 L50 50 M85 32.5 L50 50 M15 67.5 L50 50" stroke="var(--color-logo-red)" strokeWidth="4" strokeLinecap="round" />
-            {/* Nodo central */}
-            <circle cx="50" cy="50" r="8" fill="var(--color-logo-x  )" />
-            {/* Nodos externos */}
-            <circle cx="50" cy="15" r="4" fill="var(--color-logo-navy)" />
-            <circle cx="85" cy="32.5" r="4" fill="var(--color-logo-navy)" />
-            <circle cx="85" cy="67.5" r="4" fill="var(--color-logo-navy)" />
-            <circle cx="50" cy="85" r="4" fill="var(--color-logo-navy)" />
-            <circle cx="15" cy="67.5" r="4" fill="var(--color-logo-navy)" />
-            <circle cx="15" cy="32.5" r="4" fill="var(--color-logo-navy)" />
-          </svg>
+          <div className="logo-image"></div>
           {/* <span>YakuCode</span> */}
           <span>YakuCode</span>
         </div>

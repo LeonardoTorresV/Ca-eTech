@@ -6,15 +6,46 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.loader-spinner {
-  width: 100px;
-  height: 100px;
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.loader-spinner svg {
-  width: 100%;
+.loader-logo {
+  width: 6rem;
+  height: 6rem;
+  background: url('/yakucode-logo-no-wallpaper.png') center/contain no-repeat;
+  background-blend-mode: multiply;
+  animation: loaderPulse 1.2s ease-in-out infinite;
+}
+
+.loader-bar {
+  width: 10rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  width: 40%;
   height: 100%;
+  border-radius: 2px;
+  background: var(--color-primary);
+  animation: loaderSlide 1.2s ease-in-out infinite;
+}
+
+@keyframes loaderPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.95); }
+}
+
+@keyframes loaderSlide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
 }

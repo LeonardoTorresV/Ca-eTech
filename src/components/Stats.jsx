@@ -13,7 +13,7 @@ const STATS = [
     sub: 'Web, PWA y Backend'
   },
   {
-    value: '15+',
+    value: '10+',
     label: 'Tecnologías dominadas',
     sub: 'Frontend, Backend y DevOps'
   },

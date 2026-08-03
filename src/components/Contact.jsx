@@ -108,7 +108,7 @@ export default function Contact({ onNavigate }) {
 
             <div className="contact-methods">
               {/* WhatsApp Item */}
-              <div className="contact-method-item">
+              {/* <div className="contact-method-item">
                 <div className="contact-method-icon">
                   <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
@@ -116,12 +116,12 @@ export default function Contact({ onNavigate }) {
                 </div>
                 <div className="contact-method-details">
                   <h4>WhatsApp</h4>
-                  {/* REEMPLAZAR: Cambia el número de teléfono por el tuyo en la URL y en el texto */}
+                  
                   <a href="https://wa.me/5491100000000?text=Hola!%20Me%20gustaria%20saber%20mas%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
                     +54 9 11 0000-0000
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Email Item */}
               <div className="contact-method-item">
