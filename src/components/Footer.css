@@ -32,9 +32,11 @@
   -webkit-text-fill-color: transparent;
 }
 
-.footer-logo svg {
-  width: 2rem;
-  height: 2rem;
+.footer-logo-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .footer-brand-desc {

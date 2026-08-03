@@ -18,55 +18,55 @@
 }
 
 [data-theme='light'] {
-  --color-bg-gradient: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #ffe4e6 100%);
+  --color-bg-gradient: linear-gradient(135deg, #e0f2f1 0%, #e0f2fe 50%, #f0fdf4 100%);
   --color-bg-solid: #ffffff;
   --color-bg-card: rgba(255, 255, 255, 0.7);
   --color-bg-card-hover: rgba(255, 255, 255, 0.9);
-  --color-text-main: #0f172a;
-  --color-text-muted: #475569;
-  --color-primary: #1e3a8a; /* Navy Blue */
-  --color-primary-dark: #0f172a;
-  --color-secondary: #475569; /* Slate */
-  --color-accent: #e11d48; /* Crimson Red */
-  --color-border: rgba(30, 58, 138, 0.12);
+  --color-text-main: #132630;
+  --color-text-muted: #4e616c;
+  --color-primary: #0a8d98; /* Deep Teal / Yaku Teal */
+  --color-primary-dark: #076c75;
+  --color-secondary: #009688;
+  --color-accent: #1cc5b9; /* Light Aqua */
+  --color-border: rgba(10, 141, 152, 0.12);
   --color-border-card: rgba(255, 255, 255, 0.4);
-  --color-shadow: rgba(30, 58, 138, 0.06);
-  --color-shadow-hover: rgba(30, 58, 138, 0.12);
+  --color-shadow: rgba(10, 141, 152, 0.06);
+  --color-shadow-hover: rgba(10, 141, 152, 0.12);
   --color-navbar-bg: rgba(255, 255, 255, 0.75);
   --color-btn-text: #ffffff;
-  --color-btn-secondary-bg: rgba(30, 58, 138, 0.08);
-  --color-btn-secondary-text: #1e3a8a;
+  --color-btn-secondary-bg: rgba(10, 141, 152, 0.08);
+  --color-btn-secondary-text: #0a8d98;
   
-  /* Dynamic Logo Colors */
-  --color-logo-navy: #0f172a;
-  --color-logo-red: #e11d48;
-  --color-logo-outline: #0f172a;
+  /* Dynamic Logo Colors from YakuCode design */
+  --color-logo-navy: #132630;
+  --color-logo-red: #0a8d98;
+  --color-logo-outline: #132630;
 }
 
 [data-theme='dark'] {
-  --color-bg-gradient: linear-gradient(135deg, #090d16 0%, #030712 50%, #200810 100%);
-  --color-bg-solid: #030712;
+  --color-bg-gradient: linear-gradient(135deg, #05141c 0%, #02090f 50%, #0b0716 100%);
+  --color-bg-solid: #02090f;
   --color-bg-card: rgba(15, 23, 42, 0.6);
   --color-bg-card-hover: rgba(15, 23, 42, 0.85);
-  --color-text-main: #f8fafc;
-  --color-text-muted: #94a3b8;
-  --color-primary: #3b82f6; /* Light Navy / Vibrant Blue */
-  --color-primary-dark: #1d4ed8;
-  --color-secondary: #94a3b8; /* Slate Muted */
-  --color-accent: #f43f5e; /* Vibrant Crimson/Rose */
-  --color-border: rgba(59, 130, 246, 0.18);
+  --color-text-main: #f1f7f9;
+  --color-text-muted: #8ca3ae;
+  --color-primary: #3ac8b7; /* Fresh Aqua / Teal */
+  --color-primary-dark: #0a8d98;
+  --color-secondary: #8ca3ae;
+  --color-accent: #59d5cd; /* Very Light Mint */
+  --color-border: rgba(58, 200, 183, 0.18);
   --color-border-card: rgba(255, 255, 255, 0.06);
   --color-shadow: rgba(0, 0, 0, 0.35);
-  --color-shadow-hover: rgba(59, 130, 246, 0.25);
-  --color-navbar-bg: rgba(3, 7, 18, 0.75);
-  --color-btn-text: #030712;
-  --color-btn-secondary-bg: rgba(59, 130, 246, 0.12);
-  --color-btn-secondary-text: #3b82f6;
+  --color-shadow-hover: rgba(58, 200, 183, 0.25);
+  --color-navbar-bg: rgba(2, 9, 15, 0.75);
+  --color-btn-text: #02090f;
+  --color-btn-secondary-bg: rgba(58, 200, 183, 0.12);
+  --color-btn-secondary-text: #3ac8b7;
 
   /* Dynamic Logo Colors */
-  --color-logo-navy: #3b82f6;
-  --color-logo-red: #f43f5e;
-  --color-logo-outline: #f8fafc;
+  --color-logo-navy: #3ac8b7;
+  --color-logo-red: #59d5cd;
+  --color-logo-outline: #f1f7f9;
 }
 
 body {
