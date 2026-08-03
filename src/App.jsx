@@ -59,7 +59,7 @@ export default function App() {
         <Hero />
         <WhyTrustUs />
         <Stats />
-        <Team />
+        {/* <Team /> */}
         <TrustUs />
         <Process />
         <Services />

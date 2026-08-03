@@ -17,7 +17,7 @@ export default function Privacy({ onBack }) {
           <p className="legal-updated">Última actualización: 2026</p>
 
           <h2>1. Información que recopilamos</h2>
-          <p>Recopilamos los datos que usted nos proporciona voluntariamente a través del formulario de contacto: nombre, correo electrónico, tipo de proyecto, presupuesto estimado y mensaje.</p>
+          <p>Recopilamos los datos que usted nos proporciona voluntariamente a través del formulario de contacto: nombre, correo electrónico, tipo de proyecto y mensaje.</p>
 
           <h2>2. Uso de la información</h2>
           <p>Utilizamos esta información exclusivamente para responder a su consulta, enviar propuestas comerciales y brindar soporte post-venta. No compartimos sus datos con terceros sin su consentimiento.</p>
@@ -29,10 +29,10 @@ export default function Privacy({ onBack }) {
           <p>Este sitio no utiliza cookies de seguimiento. Solo almacenamos su preferencia de tema (claro/oscuro) en localStorage de su navegador.</p>
 
           <h2>5. Sus derechos</h2>
-          <p>Usted puede solicitar en cualquier momento la eliminación de sus datos enviando un correo a <a href="mailto:info@devnexus.com">info@devnexus.com</a>.</p>
+          <p>Usted puede solicitar en cualquier momento la eliminación de sus datos enviando un correo a <a href="mailto:info@yakucode.com">info@yakucode.com</a>.</p>
 
           <h2>6. Contacto</h2>
-          <p>Para consultas sobre esta política, contáctenos en <a href="mailto:info@devnexus.com">info@devnexus.com</a>.</p>
+          <p>Para consultas sobre esta política, contáctenos en <a href="mailto:info@yakucode.com">info@yakucode.com</a>.</p>
         </div>
       </div>
     </div>

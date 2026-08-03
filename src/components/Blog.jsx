@@ -7,7 +7,7 @@ const ARTICLES = [
     title: 'Cómo lanzar tu startup sin gastar una fortuna en tecnología',
     excerpt: 'Validar una idea no requiere un presupuesto enorme. Te mostramos cómo construir un MVP funcional, rápido y escalable sin deuda técnica desde el día uno.',
     category: 'Startups',
-    author: 'DevNexus',
+    author: 'YakuCode',
     tags: ['MVP', 'Startup']
   },
   {
@@ -15,7 +15,7 @@ const ARTICLES = [
     title: 'El secreto de las empresas que escalan sin deuda técnica',
      excerpt: 'Muchos negocios crecen rápido pero se estancan por código desordenado. Aprende cómo el Clean Code y las buenas arquitecturas aceleran el crecimiento en lugar de frenarlo.',
     category: 'Crecimiento',
-    author: 'DevNexus',
+    author: 'YakuCode',
     tags: ['Escalabilidad', 'Clean Code']
   },
   {
@@ -23,7 +23,7 @@ const ARTICLES = [
      title: 'Por qué tu competencia ya usa código limpio (y tú no)',
     excerpt: 'No es una moda. Las empresas que priorizan la calidad técnica entregan features más rápido, reducen costos de mantenimiento y retienen talento clave.',
     category: 'Competitividad',
-    author: 'DevNexus',
+    author: 'YakuCode',
     tags: ['Ventaja competitiva', 'Calidad']
   },
   {
@@ -31,7 +31,7 @@ const ARTICLES = [
     title: 'De la idea al producto en tiempo récord',
     excerpt: 'Metodologías ágiles, sprints bien definidos y prototipos tempranos. Así es como pasamos de un brief a un producto en semanas, no en meses.',
     category: 'Metodología',
-    author: 'DevNexus',
+    author: 'YakuCode',
     tags: ['Agile', 'Prototipado']
   },
   {
@@ -39,15 +39,15 @@ const ARTICLES = [
     title: 'Cómo evitar que tu proyecto se vuelva un elefante blanco',
     excerpt: 'Presupuestos inflados, plazos que se esfuman y resultados que no cumplen. Te mostramos los errores más comunes y cómo evitarlos desde la primera reunión.',
     category: 'Gestión',
-    author: 'DevNexus',
+    author: 'YakuCode',
     tags: ['Proyectos', 'Resultados']
   },
   {
     id: 6,
     title: 'La guía definitiva para elegir tu stack tecnológico sin arrepentirte',
-    excerpt: 'No hay una respuesta mágica, pero sí un método. Te explicamos cómo evaluar tecnologías según tu presupuesto, equipo y objetivos de negocio.',
+    excerpt: 'No hay una respuesta mágica, pero sí un método. Te explicamos cómo evaluar tecnologías según tu objetivos de negocio.',
     category: 'Tecnología',
-    author: 'DevNexus',
+    author: 'YakuCode',
     tags: ['Stack', 'Decisiones']
   }
 ]

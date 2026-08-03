@@ -6,7 +6,6 @@ export default function Contact({ onNavigate }) {
     nombreCompleto: '',
     correoElectronico: '',
     tipoProyecto: '',
-    presupuestoEstimado: '',
     timelineDeseado: '',
     mensaje: '',
     aceptaTerminos: false
@@ -33,7 +32,6 @@ export default function Contact({ onNavigate }) {
     if (!formData.correoElectronico.trim()) newErrors.correoElectronico = 'El email es requerido'
     else if (!/\S+@\S+\.\S+/.test(formData.correoElectronico)) newErrors.correoElectronico = 'Email inválido'
      if (!formData.tipoProyecto) newErrors.tipoProyecto = 'Selecciona un tipo de proyecto'
-     if (!formData.presupuestoEstimado) newErrors.presupuestoEstimado = 'Selecciona un presupuesto'
      if (!formData.timelineDeseado) newErrors.timelineDeseado = 'Selecciona un plazo'
      if (!formData.mensaje.trim()) newErrors.mensaje = 'Cuéntanos sobre tu proyecto'
     if (!formData.aceptaTerminos) newErrors.aceptaTerminos = 'Debes aceptar los términos y condiciones'
@@ -54,7 +52,7 @@ export default function Contact({ onNavigate }) {
     setStatus(null)
 
     try {
-      const response = await fetch('http://localhost:8080/contacto', {
+      const response = await fetch('https://ca-etech-backend.onrender.com/contacto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -68,7 +66,6 @@ export default function Contact({ onNavigate }) {
           nombreCompleto: '',
           correoElectronico: '',
           tipoProyecto: '',
-          presupuestoEstimado: '',
           timelineDeseado: '',
           mensaje: '',
           aceptaTerminos: false
@@ -111,7 +108,7 @@ export default function Contact({ onNavigate }) {
 
             <div className="contact-methods">
               {/* WhatsApp Item */}
-              <div className="contact-method-item">
+              {/* <div className="contact-method-item">
                 <div className="contact-method-icon">
                   <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
@@ -119,12 +116,12 @@ export default function Contact({ onNavigate }) {
                 </div>
                 <div className="contact-method-details">
                   <h4>WhatsApp</h4>
-                  {/* REEMPLAZAR: Cambia el número de teléfono por el tuyo en la URL y en el texto */}
+                  
                   <a href="https://wa.me/5491100000000?text=Hola!%20Me%20gustaria%20saber%20mas%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
                     +54 9 11 0000-0000
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               {/* Email Item */}
               <div className="contact-method-item">
@@ -202,23 +199,6 @@ export default function Contact({ onNavigate }) {
               </div>
 
               <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="presupuestoEstimado" className="form-label">Presupuesto (USD)</label>
-                  <select 
-                    id="presupuestoEstimado" 
-                    name="presupuestoEstimado" 
-                    className={`form-input form-select ${errors.presupuestoEstimado ? 'input-error' : ''}`}
-                    value={formData.presupuestoEstimado}
-                    onChange={handleChange}
-                   >
-                     <option value="">Selecciona</option>
-                     <option value="MENOS_1000">&lt; $1,000</option>
-                    <option value="ENTRE_1000_5000">$1,000 - $5,000</option>
-                    <option value="ENTRE_5000_10000">$5,000 - $10,000</option>
-                    <option value="MAS_10000">&gt; $10,000</option>
-                  </select>
-                  {errors.presupuestoEstimado && <span className="error-text">{errors.presupuestoEstimado}</span>}
-                </div>
 
                 <div className="form-group">
                   <label htmlFor="timelineDeseado" className="form-label">Timeline Deseado</label>
